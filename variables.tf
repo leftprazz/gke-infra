@@ -72,12 +72,12 @@ variable "node_pool" {
 
   default = {
     name               = "gke-infra-node"
-    machine_type       = "custom-4-6144"
+    machine_type       = "e2-custom-4-6144"
     spot               = true
-    initial_node_count = 2
-    max_count          = 4
+    initial_node_count = 1
+    max_count          = 2
     disk_size_gb       = 40
-    node_count         = 3
+    node_count         = 2
     disk_type          = "pd-balanced"
   }
 }
